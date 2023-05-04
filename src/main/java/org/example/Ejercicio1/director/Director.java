@@ -1,8 +1,8 @@
-package org.example.director;
+package org.example.Ejercicio1.director;
 
-import org.example.Builder.CarManualBuilder;
-import org.example.components.GPSNavigator;
-import org.example.components.TripComputer;
+import org.example.Ejercicio1.Builder.CarManualBuilder;
+import org.example.Ejercicio1.components.GPSNavigator;
+import org.example.Ejercicio1.components.TripComputer;
 
 public class Director {
     public void construccionAmbulancia(CarManualBuilder builder) {

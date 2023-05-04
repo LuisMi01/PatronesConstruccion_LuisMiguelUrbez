@@ -1,7 +1,7 @@
-package org.example.ambulancias;
+package org.example.Ejercicio1.ambulancias;
 
-import org.example.components.GPSNavigator;
-import org.example.components.TripComputer;
+import org.example.Ejercicio1.components.GPSNavigator;
+import org.example.Ejercicio1.components.TripComputer;
 
 public class Ambulancia {
     private final Transmission transmission;

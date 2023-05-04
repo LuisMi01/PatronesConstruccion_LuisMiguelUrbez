@@ -1,6 +1,6 @@
-package org.example.components;
+package org.example.Ejercicio1.components;
 
-import org.example.ambulancias.Ambulancia;
+import org.example.Ejercicio1.ambulancias.Ambulancia;
 
 public class TripComputer {
 

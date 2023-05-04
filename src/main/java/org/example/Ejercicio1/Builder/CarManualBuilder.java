@@ -1,8 +1,8 @@
-package org.example.Builder;
+package org.example.Ejercicio1.Builder;
 
-import org.example.ambulancias.Manual;
-import org.example.components.GPSNavigator;
-import org.example.components.TripComputer;
+import org.example.Ejercicio1.ambulancias.Manual;
+import org.example.Ejercicio1.components.GPSNavigator;
+import org.example.Ejercicio1.components.TripComputer;
 
 public class CarManualBuilder implements Builder{
 

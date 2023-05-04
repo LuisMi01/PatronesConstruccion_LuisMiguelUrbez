@@ -1,7 +1,7 @@
-package org.example.Builder;
+package org.example.Ejercicio1.Builder;
 
-import org.example.components.GPSNavigator;
-import org.example.components.TripComputer;
+import org.example.Ejercicio1.components.GPSNavigator;
+import org.example.Ejercicio1.components.TripComputer;
 
 public interface Builder {
     void setSeats(int seats);

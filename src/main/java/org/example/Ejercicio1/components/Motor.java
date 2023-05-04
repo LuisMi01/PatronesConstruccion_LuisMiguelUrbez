@@ -1,4 +1,4 @@
-package org.example.components;
+package org.example.Ejercicio1.components;
 
 public class Motor {
     private double volume;

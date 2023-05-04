@@ -1,10 +1,10 @@
-package org.example;
+package org.example.Ejercicio1;
 
-import org.example.Builder.CarBuilder;
-import org.example.Builder.CarManualBuilder;
-import org.example.ambulancias.Ambulancia;
-import org.example.ambulancias.Manual;
-import org.example.director.Director;
+import org.example.Ejercicio1.Builder.CarBuilder;
+import org.example.Ejercicio1.Builder.CarManualBuilder;
+import org.example.Ejercicio1.ambulancias.Ambulancia;
+import org.example.Ejercicio1.ambulancias.Manual;
+import org.example.Ejercicio1.director.Director;
 
 public class Main {
 public static void main(String[] args) {
