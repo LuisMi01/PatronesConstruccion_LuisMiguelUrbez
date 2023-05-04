@@ -1,34 +1,29 @@
 package org.example;
 
+import org.example.Builder.CarBuilder;
+import org.example.Builder.CarManualBuilder;
 import org.example.ambulancias.Ambulancia;
-import org.example.builders.AmbulanciaBuilder;
-import org.example.builders.Builder;
-import org.example.builders.BuilderCompuesto;
-import org.example.builders.BuilderSimple;
+import org.example.ambulancias.Manual;
 import org.example.director.Director;
 
 public class Main {
 public static void main(String[] args) {
     Director director = new Director();
+    CarBuilder builder = new CarBuilder();
+    director.constructSportsCar(builder);
 
-    AmbulanciaBuilder baseSimpleBuilder = new AmbulanciaBuilder() {
-        @Override
-        public void construirNombre(String nombre) {
+    // The final product is often retrieved from a builder object, since
+    // Director is not aware and not dependent on concrete builders and
+    // products.
+    Ambulancia car = builder.getResult();
+    System.out.println("Car built: Ambulancia");
 
-        }
 
-        @Override
-        public void construirNumAmbulancias(int numAmbulancias) {
+    CarManualBuilder manualBuilder = new CarManualBuilder();
 
-        }
-
-        @Override
-        public void construirTiempoMedioAsistencia(int tiempoMedioAsistencia) {
-
-        }
-    };
-    director.setBaseBuilder(baseSimpleBuilder);
-    director.construirBase();
-    Builder baseSimple = director.getBase();
-    }
+    // Director may know several building recipes.
+    director.constructSportsCar(manualBuilder);
+    Manual carManual = manualBuilder.getResult();
+    System.out.println("\nCar manual built:\n" + carManual.print());
+}
 }

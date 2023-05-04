@@ -1,24 +1,16 @@
 package org.example.director;
 
-import org.example.builders.AmbulanciaBuilder;
-import org.example.builders.Builder;
+import org.example.Builder.CarManualBuilder;
+import org.example.components.GPSNavigator;
+import org.example.components.TripComputer;
 
 public class Director {
-        private AmbulanciaBuilder baseBuilder;
-
-        public void setBaseBuilder(AmbulanciaBuilder baseBuilder) {
-            this.baseBuilder = baseBuilder;
-        }
-
-        public Builder getBase() {
-            return baseBuilder.getBase();
-        }
-
-        public void construirBase() {
-            baseBuilder.crearNuevaBase();
-            baseBuilder.construirNombre("Nombre de la base");
-            baseBuilder.construirNumAmbulancias(0);
-            baseBuilder.construirTiempoMedioAsistencia(0);
-        }
+    public void construccionAmbulancia(CarManualBuilder builder) {
+        builder.setSeats(2);
+        builder.setTripComputer(new TripComputer());
+        builder.setGPSNavigator(new GPSNavigator());
+    }
 }
+
+
 
